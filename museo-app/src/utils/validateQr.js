@@ -12,3 +12,4 @@ export function parseObraIdFromQr(data) {
 
   return null;
 }
+//hola 
