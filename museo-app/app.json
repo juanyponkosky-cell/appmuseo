@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "museo-app",
-    "slug": "museo-app",
+    "slug": "app-muse0",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,6 +12,7 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./android/app/google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -22,7 +23,7 @@
       "predictiveBackGestureEnabled": false,
       "permissions": [
         "android.permission.CAMERA",
-        "android.permission.CAMERA"
+        "android.permission.POST_NOTIFICATIONS"
       ],
       "package": "com.anonymous.museoapp"
     },
@@ -44,11 +45,25 @@
           }
         }
       ],
-      "expo-barcode-scanner"
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/android-icon-monochrome.png",
+          "color": "#FFFFFF",
+          "androidCollapsedTitle": "Nuevas notificaciones"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "addf2f37-c8e4-4297-8969-66c8b15fbb09"
+      }
+    },
+    "owner": "ponkosky"
   }
 }

@@ -1,0 +1,1 @@
+curl -X POST https://exp.host/--/api/v2/push/send -H "Content-Type: application/json" -d "{\"to\": \"ExponentPushToken[PVRfq3B9NZ35Kf_zu_09ef]\", \"title\": \"🎨 Nueva obra agregada\", \"body\": \"Entrá para ver los nuevos detalles del museo\", \"data\": {\"obraId\": \"obra_123\"}}"

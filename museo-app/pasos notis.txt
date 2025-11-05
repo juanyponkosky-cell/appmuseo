@@ -1,0 +1,5 @@
+instalar expo notifications
+vinvular con firebase
+agregar cuenta de servicio de firebase 
+eas credentials 
+agregar ruta del json de la cuenta de servicio 
