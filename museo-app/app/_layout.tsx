@@ -4,7 +4,12 @@ import { Platform } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import * as Notifications from 'expo-notifications';
 import * as Device from 'expo-device';
+import * as Location from 'expo-location';
+import * as TaskManager from 'expo-task-manager';
 import Constants from 'expo-constants';
+// Ruta correcta (sale de 'app' y entra a 'src')
+import '../src/services/geofencingTask';
+
 
 // 🟩 Configurar cómo se muestran las notificaciones en foreground
 Notifications.setNotificationHandler({

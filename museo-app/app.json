@@ -9,7 +9,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Permite que la aplicación vea tu ubicación para mostrarte el mapa del museo y contenido relevante.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Necesitamos tu ubicación constante para darte automáticamente la bienvenida al ingresar al museo, incluso cuando la aplicación está cerrada." 
+      }
     },
     "android": {
       "googleServicesFile": "./android/app/google-services.json",
@@ -23,7 +27,10 @@
       "predictiveBackGestureEnabled": false,
       "permissions": [
         "android.permission.CAMERA",
-        "android.permission.POST_NOTIFICATIONS"
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION" 
       ],
       "package": "com.anonymous.museoapp"
     },
